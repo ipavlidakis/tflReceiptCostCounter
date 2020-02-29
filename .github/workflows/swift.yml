@@ -9,8 +9,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build
+    - name: Build project
       run: swift build -v
+    - name: Show content
+      run: ls -la
+    - name: Show path
+      run: pwd
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
       with:
