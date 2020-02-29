@@ -13,5 +13,9 @@
 ./tflReceiptCostCounter --input <path to your csv file>
 ./tflReceiptCostCounter -i <path to your csv file>
 ```
+
+# Install
+Grab the generated artifact from the latest sucessful action(https://github.com/ipavlidakis/tflReceiptCostCounter/actions?query=workflow%3ASwift+is%3Asuccess)
+
 # Next steps
 A day after I created this tool, Apple published the https://github.com/apple/swift-argument-parser. My next plans are to migrate from my custom argument parser to the one provided by Apple
