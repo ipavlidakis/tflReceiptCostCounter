@@ -10,13 +10,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build project
-      run: swift build -v
-    - name: Show content
-      run: ls -la .build/
-    - name: Show path
-      run: pwd
+      run: swift build -c release -v
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
       with:
         name: tflReceiptCostCounter
-        path: __DerivedData/tflReceiptCostCounter/Build/Products/Debug/tflReceiptCostCounter
+        path: .build/release/tflReceiptCostCounter
