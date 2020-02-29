@@ -16,3 +16,7 @@ jobs:
       with:
         name: tflReceiptCostCounter
         path: .build/release/tflReceiptCostCounter
+    - name: Action Release
+      uses: yakuhzi/action-release@v1.2.0
+      with:
+        file: .build/release/tflReceiptCostCounter
