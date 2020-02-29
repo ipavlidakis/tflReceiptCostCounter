@@ -12,7 +12,7 @@ jobs:
     - name: Build project
       run: swift build -v
     - name: Show content
-      run: ls -la
+      run: ls -la .build/
     - name: Show path
       run: pwd
     - name: Upload artifact
